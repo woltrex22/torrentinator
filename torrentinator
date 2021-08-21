@@ -376,4 +376,4 @@ printf "${NC}\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 printf "${lime}Invalid Choice ! Try Again..\n${NC}"
 sleep 1
 sh start
-f
+fi
