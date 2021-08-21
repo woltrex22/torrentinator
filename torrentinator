@@ -63,7 +63,7 @@ printf "${GREEN}====================================\n"
 printf "${NC}                                     \n"
 printf "${yellow}Enter Your Torrent File Path : ${NC}"
 read path
-cd home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads/
+cd /home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads/
 aria2c "$path"
 
 
@@ -81,7 +81,7 @@ printf "${purple}====================================\n"
 printf "${NC}                                     \n"
 printf "${yellow}Paste Your Magnet Link here : ${NC}"
 read link
-cd home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads/
+cd /home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads/
 aria2c $link
 
 elif [ $choice -eq 3 ]
@@ -100,7 +100,7 @@ printf "${yellow}Enter Your Torrent File Path : ${NC}"
 read path
 magnetlink=`aria2c -S "$path" | grep "Magnet URI" | cut -c13-`
 magnetname=`aria2c -S "$path" | grep "Name" | cut -c7-`
-cd home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-to-magnet/
+cd /home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-to-magnet/
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
@@ -123,7 +123,7 @@ echo -n "Do you want to download this torrent files (y/n)? "
 read answer
 
 if [ "$answer" != "${answer#[Yy]}" ] ;then
-cd home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads
+cd /home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads
     aria2c $magnetlink
 else
 cd /data/data/com.termux/files/home/torrentinator/
@@ -161,7 +161,7 @@ torrentname=`aria2c -S hash.torrent | grep "Name" | cut -c7-`
 
 mv hash.torrent  "`aria2c -S hash.torrent | grep Name | cut -c7-`_(www.philiphacker.in).torrent"
 
-mv *.torrent "home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/magnet-to-torrent/"
+mv *.torrent "/home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/magnet-to-torrent/"
 
 
 
@@ -174,7 +174,7 @@ echo ${lime} $torrentname
 echo ""
 echo ${WHITE}Your Torrent File Stored in Download folder at following loctaion,
 echo ""
-echo ${lime} home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/magnet-to-torrent/
+echo ${lime} /home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/magnet-to-torrent/
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
 printf "${NC}                                     \n"
@@ -182,7 +182,7 @@ echo -n "Do you want to download this torrent files (y/n)? "
 read answer
 
 if [ "$answer" != "${answer#[Yy]}" ] ;then
-cd home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads
+cd /home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads
     aria2c $magneturl
 else
 cd /data/data/com.termux/files/home/torrentinator/
@@ -315,12 +315,12 @@ printf "${lime}Enter Your Choice : ${NC}"
 read cho
 if [ $cho -eq 1 ]
 then
- cd home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/
+ cd /home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/
  clear
 sh updater
 elif [ $cho -eq 2 ]
 then
- cd home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/
+ cd /home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/
  clear
 sh unins
 elif [ $cho -eq 3 ]
