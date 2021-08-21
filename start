@@ -5,6 +5,6 @@ then
 echo 1 > check.io
 sh install
 else
-unzip -o -P torrentinator torrentinator && sh .torrentinator
+sh .torrentinator
 fi
 
