@@ -1,16 +1,16 @@
-termux-setup-storage
+sudo -s
 clear
 echo "Installing..."
 pkg install zip -y
 apt install aria2 -y
 pkg install unzip -y
-mkdir "/sdcard/download/www.philiphacker.in"
-mkdir "/sdcard/download/www.philiphacker.in/torrentinator"
-mkdir "/sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads"
-mkdir "/sdcard/download/www.philiphacker.in/torrentinator/magnet-to-torrent"
-mkdir "/sdcard/download/www.philiphacker.in/torrentinator/torrent-to-magnet"
-mkdir "/sdcard/download/www.philiphacker.in/torrentinator/torrent-hashes"
-cp updater /sdcard/download/www.philiphacker.in/torrentinator/
-cp unins /sdcard/download/www.philiphacker.in/torrentinator/
+mkdir "home/tharushkaheshan100/sdcard/download/www.philiphacker.in"
+mkdir "home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator"
+mkdir "home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-downloads"
+mkdir "home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/magnet-to-torrent"
+mkdir "home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-to-magnet"
+mkdir "home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/torrent-hashes"
+cp updater home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/
+cp unins home/tharushkaheshan100/sdcard/download/www.philiphacker.in/torrentinator/
 echo 1 > check.io
 sh start
